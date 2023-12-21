@@ -1,8 +1,17 @@
-import React from 'react'
+import React from 'react';
+import "../styles/dashboard.css";
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <div className='dashboard-main'>
+      <button>
+        <Link to="/dishvoting">Vote</Link>
+      </button>
+      <button>
+        <Link to="/result">Result</Link>
+      </button>
+    </div>
   )
 }
 
