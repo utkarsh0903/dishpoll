@@ -1,0 +1,22 @@
+.dish-card{
+    width: 21.3vw;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-bottom: 1em;
+
+    .dish-details{
+        width: 100%;
+        padding-bottom: 0.2em;
+        >img{
+            width: 100%;
+            border-radius: 15px 15px 0px 0px; 
+        }
+        >h3{
+            margin-left: 0.5em;
+        }
+        >h5{
+            margin-left: 0.7em;
+        }
+    }
+}

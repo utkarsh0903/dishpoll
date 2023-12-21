@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import DishCard from './DishCard';
+import "../styles/dishvoting.css";
 
 const DishVoting = () => {
 
-  const [dishes, setDishes] = useState([
+  const [dishes] = useState([
     {
       "id": 1,
       "dishName": "Lasagne",
@@ -188,10 +189,13 @@ const DishVoting = () => {
 
   return (
     <div className='dishes-main'>
-      {dishes.map((dish) => {
-        return <DishCard key={dish.id} name={dish.dishName}
-        title={dish.description} img={dish.image} />
-      })}
+      <h2>Start voting for your favorite dishes</h2>
+      <div className="dish">
+        {dishes.map((dish) => {
+          return <DishCard key={dish.id} id={dish.id} name={dish.dishName}
+          title={dish.description} img={dish.image} />
+        })}
+      </div>
     </div>
   )
 }

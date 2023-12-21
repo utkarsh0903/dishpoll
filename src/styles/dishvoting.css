@@ -1,0 +1,11 @@
+.dishes-main{
+    >h2{
+        margin: 2em 0;
+        text-align: center;
+    }
+    .dish{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
