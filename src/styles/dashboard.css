@@ -12,3 +12,14 @@
         text-decoration: none;
     }
 }
+
+@media (max-width:800px) {
+    .dashboard-main{
+        flex-direction: column;
+
+        >button{
+            width: 30%;
+            font-size: 1.5em;
+        }
+    }
+}
