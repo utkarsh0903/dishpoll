@@ -74,6 +74,8 @@ button{
     font-size: 2em;
     border-radius: 15px;
     width: 40%;
+    background-color: bisque;
+    border: none;
 }
 
 .error{
