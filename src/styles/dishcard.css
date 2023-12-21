@@ -12,11 +12,32 @@
             width: 100%;
             border-radius: 15px 15px 0px 0px; 
         }
-        >h3{
-            margin-left: 0.5em;
-        }
         >h5{
             margin-left: 0.7em;
+        }
+        .dropdown-container{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            >h3{
+                margin-left: 0.5em;
+                width: 100%;
+            }
+            .dish-ranking{
+                margin-right: 0.4em;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                >label{
+                    font-weight: bold;
+                }
+                >select{
+                    width:53%;
+                    margin-left: 0.2em;
+                    height: 3.5vh;
+                }
+            }
+            
         }
     }
 }
