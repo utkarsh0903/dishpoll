@@ -9,7 +9,7 @@ const Dashboard = () => {
         <Link to="/dishvoting">Vote</Link>
       </button>
       <button>
-        <Link to="/result">Result</Link>
+        <Link to="/leaderboard">Leaderboard</Link>
       </button>
     </div>
   )
