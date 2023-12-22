@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import DishCard from './DishCard';
 import "../styles/dishvoting.css";
+import axios from "axios";
 
 const DishVoting = () => {
 
-  const [dishes] = useState([
+  const [dishes, setDishes] = useState([
     {
       "id": 1,
       "dishName": "Lasagne",
@@ -189,6 +190,19 @@ const DishVoting = () => {
   const [rankOne,setRankOne] = useState(false);
   const [rankTwo,setRankTwo] = useState(false);
   const [rankThree,setRankThree] = useState(false);
+
+  useEffect(() => {
+    
+    const fetchDishes = async ()=>{
+      try {
+        const {data} = await axios.get("https://raw.githubusercontent.com/syook/react-dishpoll/main/db.json")
+        setDishes(data);
+      } catch (error) {
+      }
+    }
+    fetchDishes();
+
+  }, [])
 
   const selectedRank = (rankingPoints, dishId) => {
     switch (rankingPoints) {
