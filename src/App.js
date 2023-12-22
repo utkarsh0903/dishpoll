@@ -1,18 +1,19 @@
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 import DishVoting from "./components/DishVoting";
-import Result from "./components/Result";
+import Leaderboard from "./components/Leaderboard";
 import "./App.css";
 
 function App() {
   return<>
       <Router>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Navigate to="/login" />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/dishvoting" element={<DishVoting />} />
-          <Route path="/result" element={<Result />} />
+          <Route path="/leaderboard" element={<Leaderboard />} />
         </Routes>
       </Router>
     </>
