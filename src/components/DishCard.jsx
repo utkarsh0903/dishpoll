@@ -23,7 +23,6 @@ const DishCard = ({id, name, title, img, selectedRank, rankOne, rankTwo, rankThr
                         <option value="" disabled>
                             Select an option
                         </option>
-                        {console.log(rankOne,rankTwo,rankThree)}
                         <option value="30" disabled={rankOne}>
                             Rank 1
                         </option>

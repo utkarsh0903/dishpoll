@@ -191,16 +191,18 @@ const DishVoting = () => {
   const [rankThree,setRankThree] = useState(false);
 
   const selectedRank = (rankingPoints, dishId) => {
-    console.log(rankingPoints,dishId);
     switch (rankingPoints) {
       case '30':
         setRankOne(true);
+
         break;
       case '20':
         setRankTwo(true);
+        
         break;
       case '10':
         setRankThree(true);
+        
         break;
       default:
         break;
@@ -211,7 +213,6 @@ const DishVoting = () => {
     <div className='dishes-main'>
       <h2>Start voting for your favorite dishes</h2>
       <div className="dish">
-        {console.log(rankOne,rankTwo,rankThree)}
         {dishes.map((dish) => {
           return <DishCard key={dish.id} id={dish.id} name={dish.dishName}
           title={dish.description} img={dish.image} selectedRank={selectedRank}

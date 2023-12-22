@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Leaderboard = () => {
   return (
@@ -10,4 +10,4 @@ const Leaderboard = () => {
   )
 }
 
-export default Leaderboard
+export default Leaderboard;
