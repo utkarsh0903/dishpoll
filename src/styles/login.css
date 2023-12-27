@@ -17,27 +17,27 @@
 }
 
 form{
-    width: 75%;
     height: 66%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
 }
 
 .username-section{
     display: flex;
     >label{
-        font-size: 2em;
+        font-size: 1.8vw;
     }
     input{
-        height: 3em;
+        width: 11vw;
+        height: 2.3vw;
+        margin-top: 0.5em;
         margin-left: 1em;
         border-radius: 10px;
-        margin-top: 0.3em;
-
+        
         &::placeholder{
-            font-size: 1.5em;
+            font-size: 1.5vw;
             text-align: center;
         }
     }
@@ -47,17 +47,18 @@ form{
     margin-top: 2em;
     display: flex;
     >label{
-        font-size: 2em;
+        font-size: 1.8vw;
         word-spacing: 0.8em;
     }
     input{
-        height: 3em;
+        width: 11vw;
+        height: 2.3vw;
+        margin-top: 0.5em;
         margin-left: 1em;
         border-radius: 10px;
-        margin-top: 0.3em;
 
         &::placeholder{
-            font-size: 1.5em;
+            font-size: 1.5vw;
             text-align: center;
         }
     }
@@ -71,7 +72,7 @@ form{
 }
 
 button{
-    font-size: 2em;
+    font-size: 3vw;
     border-radius: 15px;
     width: 40%;
     background-color: bisque;
@@ -79,5 +80,46 @@ button{
 }
 
 .error{
+    margin: 1em 0 0 1em;
     color: red;
+}
+
+@media (min-width:700px) and (max-width:1200px) {
+    
+    
+    .login{
+        height: 28vw;
+        width: 30%;
+    }
+    
+    .username-section{
+        margin-top: 1em;
+        >label{
+            font-size: 2vw;
+        }
+        input{
+            height: 2.8vw;
+            margin-top: 0.1em;
+            border-radius: 7px;
+        }
+    }
+    
+    .password-section{
+        >label{
+            font-size: 2vw;
+        }
+        input{
+            height: 2.8vw;
+            margin-top: 0.1em;
+            border-radius: 7px;
+        }
+    }
+    
+    .submit-btn{
+        margin-top: 2em;
+    }
+    
+    .error{
+        font-size: 2vw;
+    }
 }

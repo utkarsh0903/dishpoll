@@ -100,9 +100,9 @@ function Login() {
             <div className="login">
                 <form>
                     <div className="username-section">
-                        <label htmlFor="username" className="">User Name : </label>
+                        <label htmlFor="username">User Name : </label>
                         
-                        <div className="">
+                        <div className="username">
                             <input type="text" name="username" value={user.username}
                                     onChange={handleChange} className="" id="username"
                                     placeholder="User Name"/>
@@ -111,8 +111,8 @@ function Login() {
                     </div>
 
                     <div className="password-section">
-                        <label htmlFor="password" className="">Password :</label>
-                        <div className="">
+                        <label htmlFor="password">Password :</label>
+                        <div className="pass">
                             <input type="password" autoComplete="on" value={user.password} name="password"
                                    onChange={handleChange} className="" id="password"
                                    placeholder="Password"/>
