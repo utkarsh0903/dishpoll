@@ -1,4 +1,4 @@
-Live Preview at https://dishpoll.vercel.app/
+Preview at https://dishpoll.vercel.app/
 
 
 
